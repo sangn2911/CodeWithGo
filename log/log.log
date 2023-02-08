@@ -1,0 +1,4 @@
+{"level":"[info]","time":"2022-09-12 09:50:41","message":"loading configuration from environment"}
+{"level":"[info]","time":"2022-09-12 09:50:41","message":"host=127.0.0.1 port=5454 datebase=researchgodb user=postgres"}
+{"level":"[info]","time":"2022-09-29 09:47:43","message":"loading configuration from environment"}
+{"level":"[info]","time":"2022-09-29 09:47:43","message":"host=127.0.0.1 port=5454 datebase=researchgodb user=postgres"}

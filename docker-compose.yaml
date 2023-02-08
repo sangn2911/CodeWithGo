@@ -1,0 +1,51 @@
+{
+  "services": {
+    # "postgres12": {
+    #     "container_name": "postgres12-goResearch",
+    #     "environment": {
+    #       "POSTGRES_DB": "researchgodb",
+    #       "POSTGRES_PASSWORD": 12345,
+    #       "POSTGRES_USER": "postgres"
+    #     },
+    #     "image": "postgres",
+    #     "ports": [
+    #       "5454:5432"
+    #     ],
+    #     "volumes": [
+    #       "/home/nqsang/MyWorkspace/GoResearch/pgdata/data12:/var/lib/postgresql/data/"
+    #     ]
+    # },
+    "mysql8": {
+        "container_name": "mysql-goResearch",
+        "environment": {
+          "MYSQL_DATABASE": "researchgodb",
+          "MYSQL_PASSWORD": 12345,
+          "MYSQL_ROOT_PASSWORD": 12345,
+          "MYSQL_USER": "postgres"
+        },
+        "image": "mysql",
+        "ports": [
+          "5454:3306"
+        ],
+        "volumes": [
+          "/home/nqsang/MyWorkspace/GoResearch/mysqldata/data:/var/lib/mysql"
+        ]
+    }
+    # "mongo": {
+    #   "image": "mongo",
+    #   "container_name": "mongodb-goResearch",
+    #   "environment": {
+    #     "MONGO_INITDB_DATABASE": "researchgodb",
+    #     "MONGO_INITDB_ROOT_PASSWORD": 12345,
+    #     "MONGO_INITDB_ROOT_USERNAME": "mongo"
+    #   },
+    #   "ports": [
+    #     "5454:5432"
+    #   ],
+    #   "volumes": [
+    #     "/home/nqsang/MyWorkspace/GoResearch/mongodata/data:/data/db"
+    #   ]
+    # }
+  },
+  "version": "3"
+}

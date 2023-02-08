@@ -1,0 +1,7 @@
+dbconfig:
+  dbtype: mySQL
+  host: 127.0.0.1
+  port: 5454
+  database: researchgodb
+  user: postgres
+  password: 12345
