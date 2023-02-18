@@ -34,7 +34,7 @@ func (u *FiberUserHandler) GetUsersByName(ctx *fiber.Ctx) error {
 		})
 	}
 	name := ctx.Query("name")
-	res, err := u.service.GetUsersByName(ctx.Context(), name, pageSize, pageIdx)
+	res, err := u.service.GetUsersByName(ctx.UserContext(), name, pageSize, pageIdx)
 	if err != nil {
 		util.Logger.Errorf("internal server error: %v", err)
 		return ctx.Status(http.StatusInternalServerError).JSON(util.Reponse{
